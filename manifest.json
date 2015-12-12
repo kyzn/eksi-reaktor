@@ -2,27 +2,17 @@
 "update_url": "https://clients2.google.com/service/update2/crx",
 
   "manifest_version": 2,
-  "name": "Ekşi Reaktör",
-  "author": "expeditor",
-  "homepage_url": "https://github.com/expeditor/eksi-reaktor",
-  "description": "Ekşi sözlük için bağzı aparatlar",
-  "version": "1.3.9",
+  "name": "Ekşi Reaktör Mini",
+  "author": "kyzn",
+  "homepage_url": "https://github.com/kyzn/eksi-reaktor-mini",
+  "description": "\"ekşi reaktör\" (expeditor) chrome eklentisinin özellikleri kısıtlanmış bir uyarlaması",
+  "version": "0.0.1",
   "permissions": [
-    "*://eksisozluk.com/*",
-     "storage",
-     "contextMenus"
+    "*://eksisozluk.com/*"
   ],
-  "icons": { "128": "icon.png" },
-  "options_ui": {"page": "options.html", "chrome_style": true},
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_title": "Ekşi Reaktör",
-    "default_popup": "options.html"
-  },
   "content_scripts": [{
-    "js": [ "jquery.js","eksin.user.js" ],
+    "js": [ "jquery.js","er-mini.user.js" ],
     "matches":[ "*://eksisozluk.com/*" ],
     "run_at": "document_end"
-  }],
-  "background": {"scripts": ["background.js"]}
+  }]
 }
