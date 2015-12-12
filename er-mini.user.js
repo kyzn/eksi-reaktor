@@ -24,4 +24,4 @@ $.ajax({
 }); //.ajax
 
 //araştır düğmesini geri getir (google)
-$(".sub-title-menu").prepend("<div><a href='https://google.com/search?q="+title+" target='_blank'>araştır</a></div>");
+$(".sub-title-menu").prepend("<div><a href='https://google.com/search?q="+title+"' target='_blank'>araştır</a></div>");
